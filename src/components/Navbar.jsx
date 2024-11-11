@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -21,10 +22,10 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a
-                  href={`#${item.label.toLowerCase()}`}
+                <Link
+                  to={`#${item.label.toLowerCase()}`}
                   onClick={(e) => {
-                    e.preventDefault(); // Prevent default anchor link behavior
+                    e.preventDefault(); // Prevent default link behavior
                     const targetSection = document.getElementById(
                       item.label.toLowerCase()
                     );
@@ -32,7 +33,7 @@ const Navbar = () => {
                   }}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
