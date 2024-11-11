@@ -3,7 +3,7 @@ import { founderProfiles } from "../constants"; // Replace `pricingOptions` with
 
 const Profiles = () => {
   return (
-    <div className="mt-20">
+    <div id="founders" className="mt-20">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
         Meet Our Founders
       </h2>

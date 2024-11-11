@@ -113,10 +113,11 @@ export const features = [
 
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
+  { label: "Features", href: "#features" },
+  { label: "Workflow", href: "#workflow" },
   { label: "About", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Our Founder", href: "#founders" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export const testimonials = [
