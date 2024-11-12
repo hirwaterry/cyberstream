@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+    <nav className="sticky top-0 z-50 py-3 backdrop-blur-sm border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
@@ -23,8 +23,9 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
-                  to={`#${item.label.toLowerCase()}`}
+                  to={`${item.href.toLowerCase()}`}
                   onClick={(e) => {
+                    if((!item.href.includes('#')) && (location.pathname == '/')) return;
                     e.preventDefault(); // Prevent default link behavior
                     const targetSection = document.getElementById(
                       item.label.toLowerCase()
@@ -78,7 +79,13 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+
+    
   );
+
+
 };
 
 export default Navbar;
+
+

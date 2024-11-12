@@ -58,6 +58,7 @@ export const founderProfiles = [
     linkedin: "https://www.linkedin.com/in/nehemie-mugisha-799a7326b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app  ",
     twitter: "https://x.com/MugishaNehemie",
     email: "nehemiemugisha06@gmail.com",
+    github: "https://github.com/nehemiemugisha",
   },
   {
     name: "Hirwa Shema Terry",
@@ -67,6 +68,7 @@ export const founderProfiles = [
     linkedin: "https://www.linkedin.com/in/terry-hirwa/",
     twitter: "https://x.com/HirwaTerry",
     email: "hirwa.terry@gmail.com",
+    github: "https://github.com/hirwaterry",
   },
   
   // Add more profiles as needed
@@ -116,7 +118,7 @@ export const navItems = [
   { label: "Features", href: "#features" },
   { label: "Workflow", href: "#workflow" },
   { label: "About", href: "/about" },
-  { label: "Our Founder", href: "#founders" },
+  { label: "Founders", href: "#founders" },
   { label: "Testimonials", href: "#testimonials" },
 ];
 

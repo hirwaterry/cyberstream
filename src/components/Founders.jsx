@@ -1,5 +1,6 @@
-import { Linkedin, Twitter, Mail } from "lucide-react"; // Import social icons
+import { Linkedin, Twitter, Mail, Github } from "lucide-react"; // Import social icons
 import { founderProfiles } from "../constants"; // Replace `pricingOptions` with `founderProfiles`
+import { Link } from "react-router-dom";
 
 const Profiles = () => {
   return (
@@ -45,6 +46,15 @@ const Profiles = () => {
                   <a href={`mailto:${profile.email}`}>
                     <Mail className="text-neutral-400 hover:text-orange-500" />
                   </a>
+                )}
+                {profile.github && (
+                  <Link
+                    to={profile.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="text-neutral-400 hover:text-orange-500" />
+                  </Link>
                 )}
               </div>
             </div>

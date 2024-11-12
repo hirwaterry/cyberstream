@@ -2,9 +2,10 @@ import React from "react";
 import { FaRegHandshake, FaAward, FaUserTie } from "react-icons/fa"; // Core values icons
 import { aboutUsData } from "../constants"; // Data from constants.js
 
+
 const AboutUs = () => {
   return (
-    <div className="py-20 bg-neutral-900 text-white">
+    <div className="py-20 px-20 bg-neutral-900 text-white">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 text-center mb-16">
         <h2 className="text-3xl sm:text-5xl lg:text-6xl tracking-wide mb-4">
