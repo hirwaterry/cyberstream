@@ -7,6 +7,7 @@ import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import Founders from "../components/Founders";
 import AboutUs from "../components/AboutUs";
+import TriviaGame from "../components/TriviaGame";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Founders />
         <Workflow />
         <Testimonials />
+        <TriviaGame />
         <Footer />
       </div>
     </>

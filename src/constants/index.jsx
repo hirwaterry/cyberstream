@@ -50,6 +50,10 @@ export const socialLinks = [
 ];
 
 
+
+
+
+
 export const founderProfiles = [
   {
     name: "Mugisha Nehemie",
