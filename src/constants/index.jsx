@@ -11,6 +11,7 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
+import terry from "../assets/profile-pictures/terry.jpg";
 
 import founder from "../assets/profile-pictures/founder.jpg";
 import coFounder from "../assets/profile-pictures/Co-founder.jpg";
@@ -115,6 +116,7 @@ export const features = [
 
 
 export const navItems = [
+  { label: "Home", href: "/home" },
   { label: "Features", href: "#features" },
   { label: "Workflow", href: "#workflow" },
   { label: "About", href: "/about" },
@@ -276,19 +278,19 @@ export const aboutUsData = {
   team: [
     {
       name: "Terry",
-      role: "Co-Founder & COO",
+      role: "Software Developer",
       bio: "Terry leads Cyberstream’s technology strategies and innovations, focusing on AI, development, and security solutions.",
-      image: "https://via.placeholder.com/150",
+      image: terry,
     },
     {
-      name: "Jamie",
-      role: "Co-Founder & CEO",
+      name: "Nehemie",
+      role: "Head of AI & Data",
       bio: "Jamie oversees business strategy and ensures that Cyberstream delivers unparalleled value to clients.",
       image: "https://via.placeholder.com/150",
     },
     {
-      name: "Alex",
-      role: "Head of AI & Data",
+      name: "Ezra",
+      role: "Software Developer",
       bio: "Alex leads AI model development, ensuring our models deliver the highest quality and performance for our clients.",
       image: "https://via.placeholder.com/150",
     },
