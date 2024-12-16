@@ -8,7 +8,7 @@ const Workflow = () => {
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
         Our{" "}
         <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
-          Streamlined Workflow
+          Streamlined Workflow 
         </span>
       </h2>
       <p className="text-lg text-neutral-400 text-center mt-4 mb-16">

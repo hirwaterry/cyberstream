@@ -8,7 +8,7 @@ const NoPage = () => {
     <div className="flex flex-col items-center top-0  justify-center min-h-screen text-center bg-neutral-900 text-white px-6">
       <h1 className="text-5xl font-bold mt-4 mb-4 text-orange-500">404</h1>
       <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-8">
-        Oops! Page Not Found
+        Oops! Page Not Found '~'
       </h2>
       <p className="text-lg mb-10 text-neutral-400">
         It seems the page you’re looking for doesn’t exist.
