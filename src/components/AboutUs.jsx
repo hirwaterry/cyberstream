@@ -68,12 +68,12 @@ const AboutUs = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-orange-600 py-16 text-center text-white">
+      <div className="bg-gradient-to-r from-orange-500 to-orange-800 py-16 text-center text-white">
         <h3 className="text-3xl font-semibold mb-4">{aboutUsData.cta.title}</h3>
         <p className="text-lg mb-8">{aboutUsData.cta.description}</p>
         <a
           href={aboutUsData.cta.buttonLink}
-          className="inline-block px-8 py-3 bg-yellow-500 text-xl text-gray-900 rounded-full hover:bg-yellow-400"
+          className="inline-block px-8 py-3  text-xl text-white font-semibold border hover:text-black transition  rounded-full hover:bg-white"
         >
           {aboutUsData.cta.buttonText}
         </a>
