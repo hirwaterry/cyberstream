@@ -35,7 +35,7 @@ const HeroSection = () => {
           <source src={video1} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -43,7 +43,7 @@ const HeroSection = () => {
         >
           <source src={video2} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
       </div>
     </div>
   );
