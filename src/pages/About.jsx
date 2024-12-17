@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Founders from "../components/Founders";
 import AboutUs from "../components/AboutUs";
 
+
 import React from 'react'
 
 export const About = () => {
@@ -11,6 +12,7 @@ export const About = () => {
       <Navbar />
       <AboutUs />
       <Founders />
+      
       <Footer />
     </>
   )

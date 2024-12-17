@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
             <img className="h-20 w-30 mr-2" src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight">CyberStream</span>
+            <Link to="/home" className="text-xl tracking-tight">CyberStream</Link>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
@@ -51,17 +51,17 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          {/* <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md">
+          <div className="hidden lg:flex justify-center space-x-12 items-center">
+            {/* <a href="#" className="py-2 px-3 border rounded-md">
               Sign In
-            </a>
-            <a
-              href="#"
+            </a> */}
+            <Link
+              to="/contact"
               className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
             >
               Contact us
-            </a>
-          </div> */}
+            </Link>
+          </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}
