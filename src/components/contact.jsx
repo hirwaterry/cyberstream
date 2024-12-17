@@ -38,7 +38,7 @@ const Contact = () => {
           <FaMapMarkerAlt className="text-4xl text-orange-500 mx-auto mb-4" />
           <h4 className="text-xl font-semibold mb-2">Visit Us</h4>
           <p className="text-neutral-400">
-            123 Cyberstream Avenue, Tech City,1 KN 78 St, Kigali
+          Norrsken House Kigali, 1 KN 78 St, Kigali
           </p>
         </div>
       </div>
