@@ -8,7 +8,7 @@ import Testimonials from "../components/Testimonials";
 import Founders from "../components/Founders";
 import AboutUs from "../components/AboutUs";
 import TriviaGame from "../components/TriviaGame";
-import Stats from "../components/stats";
+// import Stats from "../components/stats";
 
 const App = () => {
   return (
