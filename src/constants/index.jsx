@@ -12,6 +12,7 @@ import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 import terry from "../assets/profile-pictures/terry.jpg";
+import ezra from "../assets/profile-pictures/ezra1.png";
 
 import founder from "../assets/profile-pictures/founder.jpg";
 import coFounder from "../assets/profile-pictures/Co-founder.jpg";
@@ -256,11 +257,11 @@ export const aboutUsData = {
   header: {
     title: "About Us",
     description:
-      "We are Cyberstream, a technology-driven company specializing in AI model training, web & app development, and cybersecurity solutions. Our goal is to innovate and secure the future of businesses through cutting-edge technology.",
+      "We are Cyberstream, a technology-driven company specializing in Health Tech solutions, AI model training, web & app development, and cybersecurity solutions. Our goal is to innovate and secure the future of businesses through cutting-edge technology.",
   },
   missionVision: {
-    mission: "Our mission is to empower businesses by leveraging the power of AI, providing robust web and app solutions, and ensuring top-tier cybersecurity protection.",
-    vision: "To be the leading innovator in the tech industry, delivering exceptional value through AI-driven solutions and secure, scalable digital platforms.",
+    mission: "Our mission at Cyberstream is to transform ideas into innovative software solutions. We believe that if you can dream it, we can make it a reality. Our expertise spans across various industries, from AI to beyond, with a commitment to crafting the software of tomorrow, today.",
+    vision: "Our vision is to be a global leader in software innovation, empowering businesses and individuals to realize their fullest potential through custom-built solutions. We strive to create a future where technology bridges gaps, drives progress, and turns visionary ideas into impactful realities.",
   },
   coreValues: [
     {
@@ -282,22 +283,28 @@ export const aboutUsData = {
   team: [
     {
       name: "Terry",
-      role: "Software Developer",
-      bio: "Terry leads Cyberstream’s technology strategies and innovations, focusing on AI, development, and security solutions.",
+      role: "Chief Operating Officer",
+      bio: "is responsible for overseeing and optimizing the company’s day-to-day operations, ensuring efficiency, driving business growth.",
       image: terry,
     },
     {
       name: "Nehemie",
       role: "Head of AI & Data",
-      bio: "Jamie oversees business strategy and ensures that Cyberstream delivers unparalleled value to clients.",
+      bio: "Nehemie oversees business strategy and ensures that Cyberstream delivers unparalleled value to clients.",
       image: "https://via.placeholder.com/150",
     },
     {
       name: "Ezra",
-      role: "Software Developer",
-      bio: "Alex leads AI model development, ensuring our models deliver the highest quality and performance for our clients.",
-      image: "https://via.placeholder.com/150",
+      role: "Project Manager ",
+      bio: "At Cyberstream, ensuring the successful delivery of software projects on time, within scope, and on budget. With expertise in project planning",
+      image: ezra,
     },
+    {
+      name : "Shema",
+      role : "",
+      bio: "is the CTO at Cyberstream, where he leads the company’s technological strategy and innovation",
+      
+    }
   ],
   cta: {
     title: "Join Us in Securing the Future",

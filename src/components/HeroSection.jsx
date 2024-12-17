@@ -25,7 +25,7 @@ const HeroSection = () => {
          Read Mowa
         </a>
       </div>
-      <div className="flex mt-10 justify-center">
+      <div className="flex mt-10 w-full justify-center">
         <video
           autoPlay
           loop

@@ -23,14 +23,14 @@ const Contact = () => {
         <div className="text-center bg-neutral-800 p-6 rounded-xl shadow-lg">
           <FaEnvelope className="text-4xl text-orange-500 mx-auto mb-4" />
           <h4 className="text-xl font-semibold mb-2">Email Us</h4>
-          <p className="text-neutral-400">contact@cyberstream.com</p>
+          <p className="text-neutral-400">infocyberstream.rw@gmail.com</p>
         </div>
 
         {/* Phone */}
         <div className="text-center bg-neutral-800 p-6 rounded-xl shadow-lg">
           <FaPhoneAlt className="text-4xl text-orange-500 mx-auto mb-4" />
           <h4 className="text-xl font-semibold mb-2">Call Us</h4>
-          <p className="text-neutral-400">+1 (234) 567-890</p>
+          <p className="text-neutral-400">+250 789 896 004</p>
         </div>
 
         {/* Address */}
@@ -38,7 +38,7 @@ const Contact = () => {
           <FaMapMarkerAlt className="text-4xl text-orange-500 mx-auto mb-4" />
           <h4 className="text-xl font-semibold mb-2">Visit Us</h4>
           <p className="text-neutral-400">
-            123 Cyberstream Avenue, Tech City, CA 12345
+            123 Cyberstream Avenue, Tech City,1 KN 78 St, Kigali
           </p>
         </div>
       </div>

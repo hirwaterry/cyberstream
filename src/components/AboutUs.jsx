@@ -50,14 +50,17 @@ const AboutUs = () => {
         <h3 className="text-3xl font-semibold text-center text-white mb-8">Meet Our Team</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {aboutUsData.team.map((member, index) => (
-            <div key={index} className="text-center bg-neutral-800 p-6 rounded-xl shadow-lg">
+            <div 
+              key={index} 
+              className="text-center bg-neutral-800 p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-neutral-700"
+            >
               <img
                 src={member.image}
                 alt={`${member.name}'s photo`}
-                className="w-32 h-32 mx-auto rounded-full mb-4"
+                className="w-32 h-32 mx-auto rounded-full mb-4 hover:opacity-90 transition duration-300"
               />
-              <h4 className="text-xl font-semibold text-white">{member.name}</h4>
-              <p className="text-neutral-400">{member.role}</p>
+              <h4 className="text-xl font-bold text-white">{member.name}</h4>
+              <p className="text-neutral-300 font-semibold">{member.role}</p>
               <p className="text-neutral-400 mb-4">{member.bio}</p>
             </div>
           ))}
