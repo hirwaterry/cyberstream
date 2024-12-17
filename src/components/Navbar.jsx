@@ -19,30 +19,36 @@ const Navbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollToSection = (id) => {
+    const targetSection = document.getElementById(id);
+    if (targetSection) {
+      window.scrollTo({ top: targetSection.offsetTop - 100, behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-sm border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
             <img className="h-20 w-30 mr-2" src={logo} alt="Logo" />
-            <Link to="/home" className="text-xl tracking-tight">CyberStream</Link>
+            <Link to="/home" onClick={scrollToTop} className="text-xl tracking-tight">CyberStream</Link>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
                 {item.href.startsWith('/') ? (
-                  <Link to={item.href}>{item.label}</Link>
+                  <Link to={item.href} onClick={scrollToTop}>{item.label}</Link>
                 ) : (
                   <a
                     href={item.href}
                     onClick={(e) => {
                       e.preventDefault();
-                      const targetSection = document.getElementById(
-                        item.href.substring(1)
-                      );
-                      if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: "smooth" });
-                      }
+                      scrollToSection(item.href.substring(1));
                     }}
                   >
                     {item.label}
@@ -57,6 +63,7 @@ const Navbar = () => {
             </a> */}
             <Link
               to="/contact"
+              onClick={scrollToTop}
               className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
             >
               Contact us
@@ -74,19 +81,22 @@ const Navbar = () => {
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
                   {item.href.startsWith('/') ? (
-                    <Link to={item.href} onClick={toggleNavbar}>{item.label}</Link>
+                    <Link 
+                      to={item.href} 
+                      onClick={() => {
+                        scrollToTop();
+                        toggleNavbar();
+                      }}
+                    >
+                      {item.label}
+                    </Link>
                   ) : (
                     <a
                       href={item.href}
                       onClick={(e) => {
                         e.preventDefault();
-                        const targetSection = document.getElementById(
-                          item.href.substring(1)
-                        );
-                        if (targetSection) {
-                          targetSection.scrollIntoView({ behavior: "smooth" });
-                          toggleNavbar();
-                        }
+                        scrollToSection(item.href.substring(1));
+                        toggleNavbar();
                       }}
                     >
                       {item.label}

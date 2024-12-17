@@ -310,7 +310,7 @@ export const aboutUsData = {
     title: "Join Us in Securing the Future",
     description: "Ready to innovate and secure your business with Cyberstream’s expert solutions? Let’s talk!",
     buttonText: "Get in Touch",
-    buttonLink: "#contact",
+    buttonLink: "/contact",
   },
 };
 
