@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const statsData = [
   { label: "Clients", value: "80+", delay: 0.1 },
-  { label: "Companies", value: "12+", delay: 0.2 },
+  { label: "Companies", value: "9+", delay: 0.2 },
   { label: "Projects Completed", value: "46+", delay: 0.3 },
-  { label: "Years Experience", value: "5+", delay: 0.4 },
+  { label: "Years Experience", value: "2+", delay: 0.4 },
 ];
 
 const Stats = () => {
