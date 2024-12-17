@@ -1,5 +1,6 @@
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -15,15 +16,15 @@ const HeroSection = () => {
       At Cyberstream, we’re driven by a passion for progress. We specialize in designing tech solutions that are transforming the way industries operate—whether it’s in healthcare, autonomous technology, or beyond.
       </p>
       <div className="flex justify-center my-10">
-        <a
-          href="#"
+        <Link
+           to="/contact"
           className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
         >
           Contact Us 
-        </a>
-        <a href="#" class="py-3 px-4 mx-3 rounded-md border border-gradient-to-r from-orange-500 to-orange-700">
+        </Link>
+        <Link to="/about" class="py-3 px-4 mx-3 rounded-md border border-gradient-to-r from-orange-500 to-orange-700">
          Read Mowa
-        </a>
+        </Link>
       </div>
       <div className="flex mt-10 w-full justify-center">
         <video

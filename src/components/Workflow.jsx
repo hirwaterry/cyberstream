@@ -12,7 +12,8 @@ const Workflow = () => {
         </span>
       </h2>
       <p className="text-lg text-neutral-400 text-center mt-4 mb-16">
-        At Cyberstream, we take a collaborative, transparent, and results-driven approach to developing web applications, <br />training AI models, and ensuring cybersecurity for your business.
+        At Cyberstream, we take a collaborative, transparent, and results-driven approach to developing web applications, 
+        <br />training AI models, and ensuring cybersecurity for your business.
       </p>
 
       <div className="flex flex-wrap justify-center">

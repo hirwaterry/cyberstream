@@ -46,7 +46,7 @@ export const supportLinks = [
 export const socialLinks = [
   { href: "https://linkedin.com/company/cyberstream", icon: <Linkedin /> },
   { href: "https://twitter.com/cyberstream", icon: <Twitter /> },
-  { href: "https://github.com/cyberstream", icon: <Github /> },
+  { href: "https://github.com/cyberstreamrw", icon: <Github /> },
   { href: "https://instagram.com/cyberstream", icon: <Instagram /> },
 ];
 
