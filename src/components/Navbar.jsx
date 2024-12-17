@@ -1,11 +1,19 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { navItems } from "../constants";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+  const navItems = [
+    { label: "Home", href: "/home" },
+    { label: "Features", href: "#features" },
+    { label: "Workflow", href: "#workflow" },
+    { label: "About", href: "/about" },
+    { label: "Founders", href: "#founders" },
+    { label: "Testimonials", href: "#testimonials" },
+  ];
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
@@ -22,19 +30,24 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link
-                  to={`${item.href.toLowerCase()}`}
-                  onClick={(e) => {
-                    if((!item.href.includes('#')) && (location.pathname == '/')) return;
-                    e.preventDefault(); // Prevent default link behavior
-                    const targetSection = document.getElementById(
-                      item.label.toLowerCase()
-                    );
-                    targetSection.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  {item.label}
-                </Link>
+                {item.href.startsWith('/') ? (
+                  <Link to={item.href}>{item.label}</Link>
+                ) : (
+                  <a
+                    href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const targetSection = document.getElementById(
+                        item.href.substring(1)
+                      );
+                      if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -60,11 +73,29 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  {item.href.startsWith('/') ? (
+                    <Link to={item.href} onClick={toggleNavbar}>{item.label}</Link>
+                  ) : (
+                    <a
+                      href={item.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const targetSection = document.getElementById(
+                          item.href.substring(1)
+                        );
+                        if (targetSection) {
+                          targetSection.scrollIntoView({ behavior: "smooth" });
+                          toggleNavbar();
+                        }
+                      }}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               <a href="#" className="py-2 px-3 border rounded-md">
                 Sign In
               </a>
@@ -74,16 +105,12 @@ const Navbar = () => {
               >
                 Contact us
               </a>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
     </nav>
-
-    
   );
-
-
 };
 
 export default Navbar;
