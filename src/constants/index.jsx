@@ -13,6 +13,7 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 import terry from "../assets/profile-pictures/terry.jpg";
 import ezra from "../assets/profile-pictures/ezra1.png";
+import raymond from "../assets/profile-pictures/raymond.png";
 
 import founder from "../assets/profile-pictures/founder.jpg";
 import coFounder from "../assets/profile-pictures/Co-founder.jpg";
@@ -122,10 +123,10 @@ export const features = [
 
 export const navItems = [
   { label: "Home", href: "/home" },
-  { label: "Features", href: "#features" },
-  { label: "Workflow", href: "#workflow" },
+  { label: "Features", href: "/home#features" },
+  { label: "Workflow", href: "/home#workflow" },
   { label: "About", href: "/about" },
-  { label: "Founders", href: "#founders" },
+  { label: "Founders", href: "/about#founders" },
   { label: "Testimonials", href: "#testimonials" },
 ];
 
@@ -289,9 +290,9 @@ export const aboutUsData = {
     },
     {
       name: "Nehemie",
-      role: "Head of AI & Data",
-      bio: "Nehemie oversees business strategy and ensures that Cyberstream delivers unparalleled value to clients.",
-      image: "https://via.placeholder.com/150",
+      role: "Chief Executive Officer",
+      bio: "CEO of  a leading software development company dedicated to turning innovative ideas into impactful solutions. With a strong vision and a passion for technology,",
+      image: ezra,
     },
     {
       name: "Ezra",
@@ -301,10 +302,18 @@ export const aboutUsData = {
     },
     {
       name : "Shema",
-      role : "",
+      role : "Chief Technology Offier",
       bio: "is the CTO at Cyberstream, where he leads the company’s technological strategy and innovation",
+      image: raymond,
       
+    },
+    {
+      name: "Nehemie",
+      role: "Chief Executive Officer",
+      bio: "CEO of  a leading software development company dedicated to turning innovative ideas into impactful solutions. With a strong vision and a passion for technology,",
+      image: ezra,
     }
+    
   ],
   cta: {
     title: "Join Us in Securing the Future",
