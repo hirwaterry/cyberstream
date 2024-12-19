@@ -14,6 +14,8 @@ import user6 from "../assets/profile-pictures/user6.jpg";
 import terry from "../assets/profile-pictures/terry.jpg";
 import ezra from "../assets/profile-pictures/ezra1.png";
 import raymond from "../assets/profile-pictures/raymond.png";
+import kusayi from "../assets/profile-pictures/kusayi.jpg";
+import kelvin from "../assets/profile-pictures/kelvin.jpg";
 
 import founder from "../assets/profile-pictures/founder.jpg";
 import coFounder from "../assets/profile-pictures/Co-founder.jpg";
@@ -292,7 +294,7 @@ export const aboutUsData = {
       name: "Nehemie",
       role: "Chief Executive Officer",
       bio: "CEO of  a leading software development company dedicated to turning innovative ideas into impactful solutions. With a strong vision and a passion for technology,",
-      image: ezra,
+      image: founder,
     },
     {
       name: "Ezra",
@@ -308,10 +310,16 @@ export const aboutUsData = {
       
     },
     {
-      name: "Nehemie",
-      role: "Chief Executive Officer",
-      bio: "CEO of  a leading software development company dedicated to turning innovative ideas into impactful solutions. With a strong vision and a passion for technology,",
-      image: ezra,
+      name: "Kusayi",
+      role: "Social Media Manager", 
+      bio: "is a dynamic Social Media Manager at Cyberstream, crafting engaging content and building strong online communities. With expertise in digital marketing and brand storytelling, he ensures our message reaches and resonates with our audience effectively.",
+      image: kusayi,
+    },
+    {
+      name: "Kelvin",
+      role: "Software Developer",
+      bio: "is a skilled Software Developer at Cyberstream, bringing technical expertise and innovation to our development projects. With a passion for clean code and problem-solving, he helps build robust and scalable solutions for our clients.",
+      image: kelvin,
     }
     
   ],
